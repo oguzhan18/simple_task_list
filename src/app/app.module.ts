@@ -1,25 +1,21 @@
-// Angular Core Imports
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
-// App Component Imports
 import { AppComponent } from './app.component';
 import { ArchiveComponent } from './components/archive/archive.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { ToolBarComponent } from './components/tool-bar/tool-bar.component';
 import { AddTodoDialogComponent } from './components/add-todo-dialog/add-todo-dialog.component';
 
-// NGRX Imports
 import { reducers } from './reducers';
 import { ToDoEffect } from './effects/ToDoEffects';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
-// Material Imports
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
@@ -37,7 +33,6 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 
-// Other Imports
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { FilterByNamePipe } from './pipes/filter-by-name.pipe';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -84,7 +79,10 @@ import { environment } from '../environments/environment';
   ],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } }
-  ],
+  ], 
+//  providers: [
+//     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } }
+//   ],
   bootstrap: [AppComponent],
   entryComponents: [
     AddTodoDialogComponent
