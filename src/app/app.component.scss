@@ -1,0 +1,22 @@
+#content {
+  padding: 20px;
+  min-height: 100vh;
+}
+ul {
+  width:10rem;
+  list-style-type: none;
+  li { 
+    padding: 0,5rem;
+    margin-left: 0;
+  }
+  li a{
+    
+    font-size:18px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  .side-logo{ 
+    width: 7em;
+    height: 10vh;
+  }
+}
